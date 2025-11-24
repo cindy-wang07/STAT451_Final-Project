@@ -14,7 +14,7 @@ This project uses publicly available air-quality data from the **U.S. EPA CASTNE
 ### **Hourly Gas Data (2024)**  
 - **Download link:**  
   https://gaftp.epa.gov/castnet/CASTNET_Outgoing/data/hourly_gas_2024.zip  
-- After downloading the ZIP file, extract `hourly_gas_2024.csv` （place it **in the same directory** as your `ui.R` and `server.R`）.  
+- After downloading the ZIP file, extract `hourly_gas_2024.csv`（place it in the same directory as `ui.R` and `server.R`）.  
 
 This dataset includes hourly pollutant measurements across multiple U.S. monitoring stations.
 
@@ -49,8 +49,6 @@ The app performs the following processing steps:
 Place the following files together:
 
 ```bash
-air-quality-dashboard/
-│
 ├── README.md
 ├── ui.R
 ├── server.R
