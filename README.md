@@ -48,10 +48,15 @@ The app performs the following processing steps:
 ## Running the App
 Place the following files together:
 
-ui.R
-server.R
-hourly_gas_2024.csv
-
+```bash
+air-quality-dashboard/
+│
+├── README.md
+├── ui.R
+├── server.R
+└── data/
+     └── hourly_gas_2024.csv
+```
 
 Run:
 
