@@ -43,4 +43,9 @@ The app reads XML directly, so no CSV conversion is needed.
 1. Install required packages:
 ```r
 install.packages(c("shiny", "xml2", "dplyr", "ggplot2", "readr", "DT"))
+```
 
+2. Run the Shiny app in RStudio:
+```r
+shiny::runApp(".")
+```
