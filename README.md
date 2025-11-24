@@ -7,7 +7,8 @@ It uses official data from the United Nations (UNdata) via the UNESCO Institute 
 Users can interactively compare spending patterns, visualize top-spending countries, and track long-term trends for each nation.
 
 ## Research Question
-**Do countries that spend a larger share of their GDP on education achieve higher participation in higher education?**
+**Do countries that spend a larger share of their GDP on education achieve higher participation in higher education?** 
+
 This project aims to show whether financial investment in education helps increase access to learning and reduce inequality between nations.
 
 ## Repository Contents
