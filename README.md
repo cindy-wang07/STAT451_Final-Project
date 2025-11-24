@@ -1,4 +1,4 @@
-# Climate Dashboard — STAT 424 Final Project
+# Climate Dashboard — STAT 451 Final Project
 
 This Shiny dashboard investigates two major climate-related questions across multiple countries:
 
@@ -12,7 +12,8 @@ The dashboard contains two interactive panels that allow users to explore these 
 ## Repository Structure
 
 ```bash
-STAT 424 Final Project Tony Wan/
+Tony-Wan/
+├── README.md
 ├── ui.R
 ├── server.R
 └── update_temperature.csv
