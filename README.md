@@ -11,13 +11,15 @@ Users can interactively compare spending patterns, visualize top-spending countr
 This project aims to show whether financial investment in education helps increase access to learning and reduce inequality between nations.
 
 ## Repository Contents
-.
+
+```bash
 ├── ui.R                  # User interface file
 ├── server.R              # Server logic file
 ├── data/
 │   ├── UNdata_Export_20251102_112030274.xml   # Education spending dataset
 │   └── UNdata_Export_20251110_013432849.xml   # Tertiary enrollment dataset
 └── README.md
+```
 
 ## Datasets and Download Links
 This app uses two datasets from **UNdata (UNESCO Institute for Statistics)**:
