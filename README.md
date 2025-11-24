@@ -8,6 +8,7 @@ This Shiny dashboard looks at how government spending on education relates to te
 **Do countries that spend a larger share of GDP on education have higher tertiary enrollment rates?**
 
 ## Repository Contents
+.
 ├── ui.R
 ├── server.R
 ├── data/
