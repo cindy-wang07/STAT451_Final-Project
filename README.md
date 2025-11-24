@@ -13,11 +13,11 @@ This project aims to show whether financial investment in education helps increa
 ## Repository Contents
 
 ```bash
-├── ui.R                  # User interface file
-├── server.R              # Server logic file
+├── ui.R                  
+├── server.R          
 ├── data/
-│   ├── UNdata_Export_20251102_112030274.xml   # Education spending dataset
-│   └── UNdata_Export_20251110_013432849.xml   # Tertiary enrollment dataset
+│   ├── UNdata_Export_20251102_112030274.xml  
+│   └── UNdata_Export_20251110_013432849.xml   
 └── README.md
 ```
 
