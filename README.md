@@ -34,12 +34,17 @@ Handles missing or inconsistent values
 
 All controls (countries, year slider) are created based on the dataset, so the interface adapts automatically.
 
-Repository Structure
-Yao-Yao/
+## Repository Structure
+
+```bash
+Tony-Wan/
 ├── README.md
 ├── ui.R
 ├── server.R
 └── update_temperature.csv
+```
+
+---
 
 Running the Application
 
