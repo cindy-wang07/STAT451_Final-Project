@@ -1,35 +1,65 @@
-# STAT451_Final-Project/Yijing
-
 # Air Quality Dashboard  
-*A Shiny Web Application for Analyzing Hourly Pollutant Data (2024)*
+*A Shiny Application for Analyzing Weekday vs Weekend Differences in Air Pollutant Levels (2024)*
 
-## 📌 Overview
+## Research Question
 
-This Shiny application explores how **hourly air pollutant concentrations** change between **weekdays and weekends** across the year 2024.
+**How do hourly concentrations of key atmospheric pollutants (CO, NO, NH₃) differ between weekdays and weekends during 2024?**
 
-The app:
-- Classifies each timestamp as **Weekday** or **Weekend**
-- Cleans the dataset using the official **VALUE_F** quality flag
-- Removes extreme outliers with **percentile trimming**
-- Allows users to select pollutants interactively
-- Compares hourly pollutant patterns between weekday and weekend
-- Displays full-year distributions and summary statistics
+This application allows users to interactively explore these patterns, compare hourly profiles, and examine full-year distributions for each pollutant.
 
 ---
 
-## 📂 Dataset
+## 📂 Data Source
 
-**File:** `hourly_gas_2024.csv`  
-Place this file in the same folder as `ui.R` and `server.R`.
+This project uses publicly available air-quality data from the **U.S. EPA CASTNET (Clean Air Status and Trends Network)**.
 
-### Required Columns
-| Column | Description |
-|--------|-------------|
-| `DATE_TIME` | Timestamp in UTC |
-| `PARAMETER` | Pollutant type (e.g., CO, NO, NH3) |
-| `VALUE` | Pollutant concentration |
-| `VALUE_F` | Data quality flag |
+### **Hourly Gas Data (2024)**  
+- **Download link:**  
+  https://gaftp.epa.gov/castnet/CASTNET_Outgoing/data/hourly_gas_2024.zip  
+- After downloading the ZIP file, extract `hourly_gas_2024.csv` （place it **in the same directory** as your `ui.R` and `server.R`）.  
+
+This dataset includes hourly pollutant measurements across multiple U.S. monitoring stations.
 
 ---
 
-## 🚀 Runnin
+## 🧪 Methodology Summary
+
+The app performs the following processing steps:
+
+### **1. Classification**
+- Each timestamp is converted into date-time format  
+- Day of week computed using `lubridate`  
+- Days are tagged as **Weekday** (Mon–Fri) or **Weekend** (Sat–Sun)
+
+### **2. Cleaning**
+- Keep only valid measurements based on **VALUE_F whitelist**  
+- Drop rows flagged as “calibration”, “power failure”, “below RL”, or missing  
+- Convert all pollutant values to numeric  
+- Optionally drop **hour 23** (often calibration hour)
+
+### **3. Outlier Removal**
+- Use **percentile trimming** (default: top 1% and bottom 1%)  
+- Trimming occurs **within each hour of day** and **within each pollutant**
+
+### **4. Aggregation**
+- Summaries computed using **Mean** or **Median**  
+- Hourly patterns generated separately for Weekday and Weekend  
+- Full-year distributions plotted for each pollutant  
+- Users may optionally compare Weekday vs Weekend distributions
+
+---
+
+## 🖥️ Running the App
+Place the following files together:
+
+ui.R
+server.R
+hourly_gas_2024.csv
+
+
+Run:
+
+```r
+library(shiny)
+runApp()
+
