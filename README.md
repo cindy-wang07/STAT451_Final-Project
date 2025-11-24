@@ -38,7 +38,7 @@ shiny::runApp(".")
 
 ---
 
-Panel 1 — Energy & Emissions
+## Panel 1 — Energy & Emissions
 
 This panel visualizes the relationship between renewable energy usage and CO₂ emissions.
 
@@ -57,8 +57,9 @@ Show or hide the legend
 Main question addressed:
 Do countries that rely more on renewable energy tend to emit less CO₂ per capita?
 
+---
 
-Panel 2 — Temperature & Extreme Weather
+## Panel 2 — Temperature & Extreme Weather
 
 This panel examines how temperature levels correspond to extreme weather events over time.
 
