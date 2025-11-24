@@ -2,6 +2,8 @@
 
 This is the final project for Chenyi Wang, Yijing Chen, Tony Wan and Yao Yao's STAT 451 class in the Fall 2025 semester.
 
+---
+Repository Structure
 
 ```bash
 STAT 451 Final Project/
