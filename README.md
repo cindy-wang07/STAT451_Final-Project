@@ -35,11 +35,24 @@ Handles missing or inconsistent values
 All controls (countries, year slider) are created based on the dataset, so the interface adapts automatically.
 
 Repository Structure
-/my-unemployment-app/
-   ├── ui.R
-   ├── server.R
-   ├── une.csv
-   └── README.md  (this file)
+Yao-Yao/
+├── README.md
+├── ui.R
+├── server.R
+└── update_temperature.csv
+
+Running the Application
+
+Clone this repository:
+
+git clone https://github.com/<your-team>/<your-repo>.git
+
+
+Open the project folder in RStudio.
+
+Run the Shiny application:
+
+shiny::runApp()
 
 
 ui.R — controls the layout and input/output structure
@@ -77,9 +90,3 @@ une.csv
 Place une.csv in the same folder as ui.R and server.R.
 
 
-
-Running the Application
-
-In RStudio:
-
-shiny::runApp()
