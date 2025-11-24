@@ -31,7 +31,7 @@ Users can explore the spending–enrollment relationship, view top spenders, and
 
 ---
 
-### **2. Yijing — Climate Dashboard**
+### **2. Tony-Wan — Climate Dashboard**
 **Research Questions:**  
 - Does renewable energy usage reduce CO₂ emissions?  
 - Do higher temperatures correspond to more extreme weather events?
@@ -39,29 +39,29 @@ Users can explore the spending–enrollment relationship, view top spenders, and
 **Summary:**  
 This dashboard visualizes climate, energy, and emissions trends using real-world temperature and renewable energy datasets.
 
-➡️ See full README in `yijing/`
+➡️ See full README in `Tony-Wan/`
 
 ---
 
-### **3. Tony-Wan — European Unemployment Dashboard**
+### **3.  Yao-Yao — European Unemployment Dashboard**
 **Research Question:**  
 How have unemployment rates changed across European countries from 2013–2023?
 
 **Summary:**  
 This dashboard uses Eurostat unemployment data, performs automatic data cleaning, and provides country-specific and regional visualizations.
 
-➡️ See full README in `Tony-Wan/`
+➡️ See full README in `Yao-Yao/`
 
 ---
 
-### **4. Yao-Yao — Air Quality Dashboard**
+### **4. Yijing Chen — Air Quality Dashboard**
 **Research Question:**  
-How do pollutant concentrations (CO, NO, NH₃) differ between weekdays and weekends during 2024?
+How do pollutant concentrations (CO, NO, NH₃...) differ between weekdays and weekends during 2024?
 
 **Summary:**  
 This dashboard analyzes hourly U.S. EPA CASTNET air quality data to compare weekday vs weekend patterns.
 
-➡️ See full README in `Yao-Yao/`
+➡️ See full README in `yijing/`
 
 ---
 
