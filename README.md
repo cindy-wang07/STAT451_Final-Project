@@ -7,9 +7,7 @@
 
 This application allows users to interactively explore these patterns, compare hourly profiles, and examine full-year distributions for each pollutant.
 
----
-
-## 📂 Data Source
+## Data Source
 
 This project uses publicly available air-quality data from the **U.S. EPA CASTNET (Clean Air Status and Trends Network)**.
 
@@ -20,9 +18,7 @@ This project uses publicly available air-quality data from the **U.S. EPA CASTNE
 
 This dataset includes hourly pollutant measurements across multiple U.S. monitoring stations.
 
----
-
-## 🧪 Methodology Summary
+## Methodology Summary
 
 The app performs the following processing steps:
 
@@ -49,7 +45,7 @@ The app performs the following processing steps:
 
 ---
 
-## 🖥️ Running the App
+## Running the App
 Place the following files together:
 
 ui.R
