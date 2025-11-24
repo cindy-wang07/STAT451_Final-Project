@@ -2,23 +2,22 @@
 # Education Spending & Outcomes Dashboard
 
 ## Overview
-This Shiny dashboard looks at how government spending on education relates to tertiary (college-level) enrollment across countries. The goal is to help users explore whether higher public investment in education leads to higher participation in higher education.
+This Shiny dashboard explores how government spending on education relates to tertiary enrollment rates across countries.
+It uses official data from the United Nations (UNdata) via the UNESCO Institute for Statistics (UIS).
+Users can interactively compare spending patterns, visualize top-spending countries, and track long-term trends for each nation.
 
 ## Research Question
-**Do countries that spend a larger share of GDP on education have higher tertiary enrollment rates?**
+**Do countries that spend a larger share of their GDP on education achieve higher participation in higher education?**
+This project aims to show whether financial investment in education helps increase access to learning and reduce inequality between nations.
 
 ## Repository Contents
-
-
 .
-├── ui.R
-├── server.R
+├── ui.R                  # User interface file
+├── server.R              # Server logic file
 ├── data/
-│ ├── UNdata_Export_20251102_112030274.xml # Education spending (% of GDP)
-│ └── UNdata_Export_20251110_013432849.xml # Tertiary enrollment ratio (%)
+│   ├── UNdata_Export_20251102_112030274.xml   # Education spending dataset
+│   └── UNdata_Export_20251110_013432849.xml   # Tertiary enrollment dataset
 └── README.md
-
-
 
 ## Datasets and Download Links
 This app uses two datasets from **UNdata (UNESCO Institute for Statistics)**:
